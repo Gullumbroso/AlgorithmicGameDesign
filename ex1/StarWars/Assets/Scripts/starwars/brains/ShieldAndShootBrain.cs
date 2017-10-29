@@ -15,7 +15,7 @@ namespace StarWars.Brains {
 				return new Color((float)0x255 / 0xFF, (float)0x30 / 0xFF, (float)0x30 / 0xFF, 1f);
 			}
 		}
-		Gilad
+		Gilad and Inbal
 		public override SpaceshipBody.Type BodyType {
 			get {
 				return SpaceshipBody.Type.TieFighter;
