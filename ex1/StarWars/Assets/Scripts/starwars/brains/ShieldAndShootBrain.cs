@@ -3,10 +3,10 @@ using StarWars.Actions;
 using Infra.Utils;
 
 namespace StarWars.Brains {
-	public class SuperSmartBrain : SpaceshipBrain {
+	public class ShieldAndShootBrain : SpaceshipBrain {
 		public override string DefaultName {
 			get {
-				return "SuperSmartShip";
+				return "ShieldAndShootShip";
 			}
 		}
 
