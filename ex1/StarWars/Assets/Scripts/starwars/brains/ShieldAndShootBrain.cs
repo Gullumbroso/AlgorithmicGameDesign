@@ -30,9 +30,8 @@ namespace StarWars.Brains {
 		private Spaceship nearestSpaceship = null;
 
 		/// <summary>
-		/// If the defender feels attacked - it turns on the shield if it can,
-		/// otherwise it starts circling right.
-		/// The defender selects the closest ship as target and tries to shoot it.
+		/// The first priority of the Shield and Shoot Ship is to turn on the shield in the case of a close shot or hostile spaceship.
+		/// Then it closes on the nearest ship. If the nearest ship is in the range for shot, it shoots.
 		/// </summary>
 		public override Action NextAction() {
 
@@ -108,7 +107,7 @@ namespace StarWars.Brains {
 
 			foreach (var shot in Space.Shots) {
 
-				// Check if the shot is close
+				// Check if the shot is too close
 				float distance = spaceship.ClosestRelativePosition(shot).magnitude;
 				var shotVector = shot.Forward;
 				if (distance <= dangerDistance && spaceship.CanRaiseShield) {
@@ -118,7 +117,7 @@ namespace StarWars.Brains {
 
 			foreach (var ship in Space.Spaceships) {
 
-				// Check if the spaceship is close
+				// Check if the spaceship is too close
 				if (spaceship == ship) continue;
 				float distance = spaceship.ClosestRelativePosition(ship).magnitude;
 				var shotVector = ship.Forward;
