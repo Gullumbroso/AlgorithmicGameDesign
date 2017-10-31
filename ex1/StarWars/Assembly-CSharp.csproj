@@ -100,6 +100,7 @@
      <Compile Include="Assets\Scripts\starwars\actions\TurnRight.cs" />
      <Compile Include="Assets\Scripts\starwars\brains\DarthShipBrain.cs" />
      <Compile Include="Assets\Scripts\starwars\brains\DefenderBrain.cs" />
+     <Compile Include="Assets\Scripts\starwars\brains\DrunkBrain.cs" />
      <Compile Include="Assets\Scripts\starwars\brains\EvaderBrain.cs" />
      <Compile Include="Assets\Scripts\starwars\brains\HunterBrain.cs" />
      <Compile Include="Assets\Scripts\starwars\brains\PlayerBrain.cs" />

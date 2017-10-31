@@ -140,6 +140,7 @@
 'Assets/Scripts/starwars/actions/TurnRight.cs'
 'Assets/Scripts/starwars/brains/DarthShipBrain.cs'
 'Assets/Scripts/starwars/brains/DefenderBrain.cs'
+'Assets/Scripts/starwars/brains/DrunkBrain.cs'
 'Assets/Scripts/starwars/brains/EvaderBrain.cs'
 'Assets/Scripts/starwars/brains/HunterBrain.cs'
 'Assets/Scripts/starwars/brains/PlayerBrain.cs'
