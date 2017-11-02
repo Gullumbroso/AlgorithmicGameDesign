@@ -117,7 +117,7 @@ namespace StarWars.Brains {
 
 			foreach (var ship in Space.Spaceships) {
 
-				// Check if the spaceship is too close
+//				 Check if the spaceship is too close
 				if (spaceship == ship) continue;
 				float distance = spaceship.ClosestRelativePosition(ship).magnitude;
 				var shotVector = ship.Forward;
